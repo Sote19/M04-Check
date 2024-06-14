@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check || Objetivos</title>
+    <link rel="stylesheet" href="objetivos.css">
+    <!-- FONTS -->
+    <!-- montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- ICONO -->
+    <link rel="icon" href="../iconos/k.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html"><img src="../image/checkblack.png"></a>
+        <div class="menu">
+            <a href="../inicio/inicio.html"><div>Inicio</div></a>
+            <a href="../objetivos/objetivos.html"><div class="actual">Objetivos</div></a>
+            <a href="../calendario/index.html"><div>Calendario</div></a>
+            <a href="../perfil/perfil.html"><div>Perfil</div></a>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="izquierda">
+            <div class="box titulo">LABORATORIO</div>
+            <div class="box nombre">
+                <div class="input-container">
+                    <input placeholder="Nombre de la tarea" class="input-field" type="text">
+                    <label for="input-field" class="input-label">Nombre de la tarea</label>
+                    <span class="input-highlight"></span>
+                </div>                 
+            </div>
+            <div class="box descripcion">
+                <div class="input-container">
+                    <input placeholder="Descripción de la tarea" class="input-field" type="text">
+                    <label for="input-field" class="input-label">Descripción de la tarea</label>
+                    <span class="input-highlight"></span>
+                </div>                 
+            </div>
+            <div class="box calidad"> Calidad de  objetivo
+                <div class="customCheckBoxHolder">
+
+                    <input class="customCheckBoxInput" id="cCB1" type="checkbox">
+                    <label class="customCheckBoxWrapper" for="cCB1">
+                        <div class="customCheckBox">
+                            <div class="inner">Común</div>
+                        </div>
+                    </label>
+                
+                    <input class="customCheckBoxInput" id="cCB2" type="checkbox">
+                    <label class="customCheckBoxWrapper" for="cCB2">
+                        <div class="customCheckBox">
+                            <div class="inner">Raro</div>
+                        </div>
+                    </label>
+                
+                    <input class="customCheckBoxInput" id="cCB3" type="checkbox">
+                    <label class="customCheckBoxWrapper" for="cCB3">
+                        <div class="customCheckBox">
+                            <div class="inner">Épico</div>
+                        </div>
+                    </label>
+                    
+                    <input class="customCheckBoxInput" id="cCB4" type="checkbox">
+                    <label class="customCheckBoxWrapper" for="cCB4">
+                        <div class="customCheckBox">
+                            <div class="inner">Legendario</div>
+                        </div>
+                    </label>
+
+                </div>
+            </div>
+            <div class="box puntos">Coste de objetivo
+                <div class="PB-range-slider-div">
+                    <input type="range" min="1" max="15" value="8" class="PB-range-slider" id="rangeSlider">
+                    <span class="PB-range-slidervalue" id="sliderValue">8</span>
+                </div>                
+            </div>
+            <div class="box bot">
+                <div class="filtro" id="crear">
+                    <div id="tarea-lab" class="interior">
+                        <button id="verd" class="crear-tarea"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                            <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                            </svg></button>
+                        <button id="vermell" class="crear-tarea"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="medio"> 
+            <div class="boxm titulom">OBJETIVOS</div>
+            <div class="boxm mid" id="comun">¡ Comer en el restaurante que tu quieras !
+                <progress id="progres_bar" max="100" value="10"></progress>
+            </div>
+            <div class="boxm mid" id="raro">¡ 2h más de Play la semana siguiente !
+                <progress id="progres_bar" max="100" value="25"></progress>
+            </div>
+            <div class="boxm mid" id="epico">¡ Comprar un juego de la Play !
+                <progress id="progres_bar" max="100" value="34"></progress>
+            </div>
+            <div class="boxm mid" id="legendaria">¡ Ir al parque de atracciones !
+                <progress id="progres_bar" max="100" value="5"></progress>
+            </div>
+            <div class="boxm mid" id="raro">¡ Un sobre de cartas a tu elección !
+                <progress id="progres_bar" max="100" value="100"></progress>
+            </div>
+            <div class="boxm mid" id="epico">¡ Poder usar ChatGPT para los deberes de clase !
+                <progress id="progres_bar" max="100" value="100"></progress>
+            </div>
+        </div>
+        <div class="derecha">
+            <div class="dertop">
+                <div class="boxm titulodt">HISTORIAL</div>
+                <div class="boxdt interiordertop" id="comun">¡ Desayunar en la cafeteria !
+                    <progress id="progres_bar" max="100" value="100"></progress>
+                </div>
+                <div class="boxdt interiordertop" id="raro">¡ Después de clase nos vamos a merendar !
+                    <progress id="progres_bar" max="100" value="100"></progress>
+                </div>
+                <div class="boxdt interiordertop" id="epico">¡ Zapatos nuevos !
+                    <progress id="progres_bar" max="100" value="100"></progress>
+                </div>
+                <div class="boxdt interiordertop" id="legendaria">¡ Pasamos el fin de semana fuera !
+                    <progress id="progres_bar" max="100" value="100"></progress>
+                </div>
+            </div>
+            <div class="derbot">
+                <div class="boxm titulodb">CHECKS</div>
+                <div class="boxm cumplidos"><p id="numero-aleatorio"></p>
+                    <img src="../image/k.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="objetivos.js"></script>
+</body>
+</html>

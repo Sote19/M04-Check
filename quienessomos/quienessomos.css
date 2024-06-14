@@ -1,0 +1,266 @@
+/* Todo el body */
+body{ 
+  font-family: "Montserrat", sans-serif;
+  background-image: url('image/fondo1.png');
+  background-size: cover;
+  background-color: #caffd9;
+}
+      
+a{
+  text-decoration: none;
+  color: #5968ff; 
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+
+}
+
+/* Header del home */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  color: #5968ff;
+  font-size: 30px; 
+  height: 80px;
+  font-weight: bold;
+}
+/* Menu derecho del home */
+.menu {
+  display: flex;
+}
+/* Logo home */
+.header img {
+  max-height: 80px;
+  margin-left: -30px;
+}
+/* Distancia entre menu derecho home */
+.menu div {
+  padding: 0 30px;
+}
+/*--------------- BOTONES MENU -----------------*/  
+
+.button {
+cursor: pointer;
+position: relative;
+font-size: 30px;
+font-family: "Montserrat", sans-serif;
+font-weight: bold !important;
+color: #5968ff;
+border-radius: 34px;
+background-color: transparent;
+font-weight: 600;
+transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+overflow: hidden;
+}
+.button::before {
+content: '';
+position: absolute;
+inset: 0;
+margin: auto;
+width: 50px;
+height: 50px;
+border-radius: inherit;
+scale: 0;
+z-index: -1;
+background-color: #59ff87;
+transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+.button:hover::before {
+  scale: 8;
+}
+/* Cambiar color cuando pasas ratón por encima*/
+.subray:hover {
+  text-decoration: underline 11px solid #59ff87;
+  cursor: pointer;
+}
+
+/* ----------DOCUMENTO---------- */
+.container{
+  height: 100%;
+  width: auto;
+  display: flex;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 1.5%;
+  border-top: 10px solid #5968ff;
+  border-bottom: 10px solid #5968ff;
+  border-radius: 20px;
+  background-color: #abffc3;
+}
+.title{
+  margin-top: 2%;
+  text-align: center;
+  font-size: 70px;
+  height: 100%;
+  width: auto;
+  font-weight: bold;
+}
+.subrayado{
+  border-top: 15px solid #59ff87;
+  margin-right: auto;
+  margin-left: auto;
+  width: 900px;
+  margin-top: -27px;
+}
+
+.esquerra{
+  font-size: 20px;
+  height: 100%;
+  width: 42%;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  font-weight: 550;
+  text-overflow: ellipsis;
+  margin: 1%;
+  margin-top: 2%;
+}
+
+.dreta {
+  height: 100%;
+  width: 50%;
+  margin: 1%;
+  margin-top: 2%;
+}
+
+/*--------TARJETAS-----------*/
+.xavi{
+margin-left: 35%;
+margin-top: -1%;
+}
+.gerard{
+margin-left: 10%;
+margin-top: 6%;
+}
+.david{
+margin-left: 60%;
+margin-top: -30%;
+}
+
+.card-client {
+  background: #5968ff;
+  width: 13rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 4px solid #59ff87;
+  box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.card-client:hover {
+transform: translateY(-10px);
+}
+
+.user-picture {
+overflow: hidden;
+object-fit: cover;
+width: 5rem;
+height: 5rem;
+border: 4px solid #59ff87;
+border-radius: 999px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+
+.user-picture svg {
+width: 2.5rem;
+fill: currentColor;
+}
+
+.name-client {
+margin: 0;
+margin-top: 20px;
+font-weight: 600;
+font-size: 18px;
+}
+
+.name-client span {
+display: block;
+font-weight: 200;
+font-size: 16px;
+}
+
+.social-media:before {
+content: " ";
+display: block;
+width: 100%;
+height: 2px;
+margin: 20px 0;
+background: #59ff87;
+}
+
+.social-media a {
+position: relative;
+margin-right: 15px;
+text-decoration: none;
+color: inherit;
+}
+
+.social-media a:last-child {
+margin-right: 0;
+}
+
+.social-media a svg {
+width: 1.1rem;
+fill: currentColor;
+}
+
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+background: #262626;
+display: block;
+position: absolute;
+bottom: 0;
+left: 50%;
+padding: 0.5rem 0.4rem;
+border-radius: 5px;
+font-size: 0.8rem;
+font-weight: 600;
+opacity: 0;
+pointer-events: none;
+transform: translate(-50%, -90%);
+transition: all 0.2s ease;
+z-index: 1;
+}
+
+.tooltip-social:after {
+content: " ";
+position: absolute;
+bottom: 1px;
+left: 50%;
+border: solid;
+border-width: 10px 10px 0 10px;
+border-color: transparent;
+transform: translate(-50%, 100%);
+}
+
+.social-media a .tooltip-social:after {
+border-top-color: #262626;
+}
+
+.social-media a:hover .tooltip-social {
+opacity: 1;
+transform: translate(-50%, -130%);
+}
+
+.gerard img{
+width: 100%;
+}
+.xavi img{
+width: 100%;
+}
+.david img{
+width: 80%;
+}
+
+#actual{
+text-decoration: underline 11px solid #59ff87;
+}

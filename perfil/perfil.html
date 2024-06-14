@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check || Perfil</title>
+  <link rel="stylesheet" href="perfil.css">
+  <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+  <!-- FONTS -->
+  <!-- montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- ICONO -->
+  <link rel="icon" href="../iconos/k.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="header">
+    <a href="../index.html"><img src="../image/checkblack.png" alt="Logo"></a>
+    <div class="menu">
+        <a href="../inicio/inicio.html"><div>Inicio</div></a>
+        <a href="../objetivos/objetivos.html"><div>Objetivos</div></a>
+        <a href="../calendario/index.html"><div>Calendario</div></a>
+        <div class="actual">Perfil</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row gutters-sm">
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center text-center">
+              <img src="../image/nude.png" alt="Admin" class="rounded-circle" width="150"> 
+              <div class="mt-3">
+                <h4>Javier García</h4>
+                <p class="text-secondary mb-1">12 años</p>
+                <p class="text-muted font-size-sm" style="font-size: 30pt;">Nivel: 6</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nuevo contenedor flex para alinear las cajas horizontalmente y tener el mismo alto -->
+        <div class="d-flex justify-content-between mt-3">
+          <!-- contador de objetivos -->
+          <div class="card mr-1 flex-fill">
+            <div class="card-body text-center d-flex flex-column">
+              <h6 class="d-flex align-items-center mb-3">Checks</h6>
+              <div id="contadorObjetivos" class="display-4 mt-auto">0</div>
+            </div>
+          </div>
+
+          <!-- reclamar recompensa -->
+          <div class="card ml-1 flex-fill">
+            <div class="card-body text-center d-flex flex-column">
+              <h6 class="d-flex align-items-center mb-3">Recompensa</h6>
+              <button id="reclamarBtn" class="btn btn-primary mt-auto">Reclamar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="card mb-3">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Nombre</h6>
+              </div>
+              <div class="col-sm-9 text-secondary">
+                Javier García
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Email</h6>
+              </div>
+              <div class="col-sm-9 text-secondary">
+                mail@ejemplo.ifp
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Teléfono</h6>
+              </div>
+              <div class="col-sm-9 text-secondary">
+                625 353 353 
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Tutor</h6>
+              </div>
+              <div class="col-sm-9 text-secondary">
+                Manuel García 
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Dirección</h6>
+              </div>
+              <div class="col-sm-9 text-secondary">
+                c/ Juan José primero
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-12">
+                <a class="btn btn-info" target="__blank" href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Modificar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gutters-sm">
+          <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h6 class="d-flex align-items-center mb-3">Tareas y Objetivos</h6>
+                <small>Tareas semanales completadas</small>
+                <div class="progress mb-3" style="height: 5px">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <small>Tareas para el próximo nivel</small>
+                <div class="progress mb-3" style="height: 5px">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <small>Meta de objetivos </small>
+                <div class="progress mb-3" style="height: 5px">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h6 class="d-flex align-items-center mb-3">Racha diaria</h6>
+                <div class="contenedor-consecutivos">
+                  <div id="dias" class="contenedor-consecutivos-individual">
+                    <h6>Días consecutivos</h6>
+                    <p>Actual: 69<br>Mejor: 107</p>                    
+                  </div>
+                  <div class="contenedor-consecutivos-individual">
+                    <h6>Semanas consecutivos</h6>
+                    <p>Actual: 18<br>Mejor: 18</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="perfil.js"></script>
+</body>
+</html>

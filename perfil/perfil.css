@@ -1,0 +1,129 @@
+.header {
+    display: flex;
+    align-items: center;
+    color: #5968ff;
+    font-size: 30px; 
+    height: 80px;
+    font-weight: bold;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    margin-bottom: 4%;    
+}
+
+.menu {
+    display: flex;
+    flex-grow: 1; /* Hace que el menú ocupe todo el espacio disponible */
+    justify-content: space-between;
+}
+/* Logo home */
+.header img {
+    max-height: 50px;
+    margin-right: 60px;
+    margin-left: 30px;
+}
+/* Distancia entre menu derecho home */
+.menu div {
+    padding: 0 30px;
+}
+
+.actual{
+    border-radius: 30px;
+    background-color: #5968ff;
+    color: #caffd9;
+}
+
+body{
+    margin: auto !important;
+    background-color: #caffd9 !important;
+    font-family: "Montserrat", sans-serif !important;   
+}
+
+.card {
+    height: fit-content !important;
+}
+
+.card-body {
+    min-height: 1px;
+    background-color: #caffd9;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+
+.h-100 {
+    height: 100%!important;
+}
+
+.shadow-none {
+    box-shadow: none!important;
+}
+
+.btn {
+    background-color: #ffec43 !important;
+    border-color: #ffec43 !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: #5968ff !important; 
+    font-family: "Montserrat", sans-serif !important; 
+    font-weight: bold !important;
+}
+
+.text-info {
+    color: #5967ff79 !important;
+}
+
+.contenedor-consecutivos{
+    display: flex;
+}
+
+.contenedor-consecutivos-individual{
+    width: 50%;
+    padding: 2px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#dias{
+    background-color: #ffec43;
+    border-radius: 20px;
+    
+}
+
+button:not(:disabled) {
+    color: #5968ff;
+    font-family: "Montserrat", sans-serif !important; 
+    font-weight: bold;    
+}
+
+button:hover {
+    color: #5968ff;
+    font-family: "Montserrat", sans-serif !important; 
+}
+
+.container{
+    border-top: 10px solid #5968ff;
+    border-bottom: 10px solid #5968ff;
+    border-radius: 20px;
+    padding: 2% !important;
+    max-width: 70% !important;
+    background-color: #abffc3;
+}

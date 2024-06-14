@@ -1,0 +1,139 @@
+/* Todo el body */
+body { 
+    font-family: "Montserrat", sans-serif;
+    background-image: url('image/fondo1.png');
+    background-size: cover;
+    background-color: #caffd9;
+}
+        
+a {
+    text-decoration: none;
+    color: #5968ff; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+/* Header del home */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 60px;
+    color: #5968ff;
+    font-size: 30px; 
+    height: 80px;
+    font-weight: bold;
+}
+/* Menu del home */
+.menu {
+    display: flex;
+    margin-left: 20px; /* Añadido margen para separación */
+}
+/* Logo home */
+.header img {
+    max-height: 80px;
+    margin-left: -30px;
+}
+/* Distancia entre menu derecho home */
+.menu div {
+    padding: 0 30px;
+}
+
+/* Div general home */
+.divhome {
+    display: flex;
+    margin: 83px;
+    margin-top: 130px;
+    height: 600px;
+}
+
+/* Div home izquierdo */
+.homeizq {
+    flex: 1;
+    border-top: 15px solid #59ff87;
+    position: relative;
+    padding-right: 870px;
+    z-index: 1;
+}
+/*div home derecho*/
+.homeder {
+    position: absolute;
+    left: 970px;
+    top: 123px;
+    height: 800px;
+    z-index: 2;
+    display: flex;
+}
+
+.leyendo {
+    width: auto;
+    height: 100%;
+    margin-left: 20%;
+}
+
+.saltando {
+    width: auto;
+    height: 60%;
+    margin-top: 11%;
+    margin-left: 3%;
+    transform: rotate(165deg);
+}
+
+/* Titulo home */
+.titulo {
+    font-size: 84px;
+    padding: 15px;
+    margin-top: -98px;
+}
+/* Texto home */
+.texto {
+    font-size: 40px;
+    padding: 15px;
+}
+/*Foto check titulo home*/
+.titulo img {
+    max-height: 190px;
+    position: absolute;
+    top: 2px;
+    left: 190px;
+}
+
+/*--------------- BOTONES MENU -----------------*/  
+
+.button {
+    cursor: pointer;
+    position: relative;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #5968ff;
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+  
+.button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #59ff87;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+  
+.button:hover::before {
+    scale: 8;
+}
+
+/* Cambiar color cuando pasas ratón por encima */
+.subray:hover {
+    text-decoration: underline 11px solid #59ff87;
+    cursor: pointer;
+}

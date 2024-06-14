@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./css/style.css" rel="stylesheet">
+  <title>Check || Calendario</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- ICONO -->
+<link rel="icon" href="../iconos/k.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="header">
+      <a href="../index.html"><img src="../image/checkblack.png"></a>
+      <div class="menu">
+          <a href="../inicio/inicio.html"><div>Inicio</div></a>
+          <a href="../objetivos/objetivos.html"><div>Objetivos</div></a>
+          <a href="../calendario/index.html"><div  class="actual">Calendario</div></a>
+          <a href="../perfil/perfil.html"><div>Perfil</div></a>
+      </div>
+  </div>
+
+  <div class="container">
+    <div id="container">
+        <div id="header">
+          <div id="monthDisplay"></div>
+
+          <div>
+            <button id="backButton">Anterior</button>
+            <button id="nextButton">Próximo</button>
+          </div>
+
+        </div>
+
+        <div id="weekdays">
+          <div>Domingo</div>
+          <div>Lunes</div>
+          <div>Martes</div>
+          <div>Miercoles</div>
+          <div>Jueves</div>
+          <div>Viernes</div>
+          <div>Sábado</div>
+        </div>
+        <div id="calendar" ></div>
+    </div>
+
+    <div id="newEventModal">
+      <h2>Nueva tarea</h2>
+
+      <input id="eventTitleInput" placeholder="Event Title"/>
+
+      <button id="saveButton"> Guardar</button>
+      <button id="cancelButton">Cancelar</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Tarea</h2>
+
+      <div id="eventText"></div><br>
+
+
+      <button id="deleteButton">Borrar</button>
+      <button id="closeButton">Cerrar</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+  </div>
+
+    <script src="./js/main.js"></script>
+
+  
+</body>
+</html>
